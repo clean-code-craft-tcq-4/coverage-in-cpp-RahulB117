@@ -86,30 +86,3 @@ BreachType checkAndAlert(Battery battery, Controller controller, Email email, in
 	sendAlerts(controller, email);
 	return controller.breachType;
 }
-
-int main()
-{
-	Battery battery;
-	Controller controller;
-	Email email;
-
-	//int temperatureinC = 50;
-	//battery.setBatteryTemperature(50);
-	//battery.coolingType = HI_ACTIVE_COOLING;
-	//CoolingType coolingType = PASSIVE_COOLING;
-	//BreachType Breach = checkAndAlert(battery, stakeholder, controller, email, temperatureinC, coolingType);
-	//std::cout << Breach <<std::endl;
-	assert(checkAndAlert(battery, controller, email, 50, HI_ACTIVE_COOLING)== TOO_HIGH);
-	assert(checkAndAlert(battery, controller, email, -10, HI_ACTIVE_COOLING)== TOO_LOW);
-	assert(checkAndAlert(battery, controller, email, 10, HI_ACTIVE_COOLING)== NORMAL);
-
-	assert(checkAndAlert(battery, controller, email, 50, PASSIVE_COOLING)== TOO_HIGH);
-	assert(checkAndAlert(battery, controller, email, -10, PASSIVE_COOLING)== TOO_LOW);
-	assert(checkAndAlert(battery, controller, email, 10, PASSIVE_COOLING)== NORMAL);
-
-	assert(checkAndAlert(battery, controller, email, 50, MED_ACTIVE_COOLING)== TOO_HIGH);
-	assert(checkAndAlert(battery, controller, email, -10, MED_ACTIVE_COOLING)== TOO_LOW);
-	assert(checkAndAlert(battery, controller, email, 10, MED_ACTIVE_COOLING)== NORMAL);
-
-	return 0;
-}
