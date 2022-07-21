@@ -44,5 +44,10 @@ BreachType classifyTemperatureBreach(CoolingType coolingType, double temperature
 void checkPassiveCoolingType(CoolingType coolingType, Passive_Cooler passive_cooler, int *lowerLimit, int *upperLimit);
 void checkHighCoolingType(CoolingType coolingType, High_Active_Cooler high_Active_Cooler, int *lowerLimit, int *upperLimit);
 void checkMediumCoolingType(CoolingType coolingType, Medium_Active_Cooler medium_Active_Cooler, int *lowerLimit, int *upperLimit);
+void sendAlerts(Controller controller, Email email);
+BreachType checkBatteryTemperature(Battery battery);
+BreachType checkAndAlert(Battery battery, Controller controller, Email email, int temperatureinC, CoolingType coolingType);
+
+
 
 #endif
