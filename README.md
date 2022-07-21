@@ -42,7 +42,13 @@ This section is about your regular work / project, not about the code in this re
 
 Think about guiding refactoring-work in your regular/project teams. Think of the day-to-day work done in your team, and improving the quality of code.
 
-You have seen a few workflows in this repository. They are quality-gates to prevent duplication, control complexity and prove functionality. Do you think some of them have potential to guide code-improvements in your team? **_enter yes/no**
+You have seen a few workflows in this repository. They are quality-gates to prevent duplication, control complexity and prove functionality. Do you think some of them have potential to guide code-improvements in your team? **yes**
 
 During the next four weeks, what improvement do you plan in your code-quality practice? (in your regular work, not in this repository!)
-**_enter the practice here**
+**I plan to implement the following clean coding techniques in my regular work and teach the same to my collegues:
+1) Reduce overall line complexity in files
+2) Seperate appropriatly named files containing related functionality
+3) Following Single Responsibility Principle while dealing with functions
+4) Designing/Developing code that is unit testable
+5) Separating unstable code from testable code
+6) Calculating and reducing overall CCM under required ndustry standard **
