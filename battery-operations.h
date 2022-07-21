@@ -2,6 +2,8 @@
 #define BATTERY_OPERATIONS_H
 
 #include "common.h"
+#include "controller.h"
+#include "email.h"
 
 class Battery {
 
