@@ -1,7 +1,6 @@
 #include "battery-operations.h"
 #include "email.h"
 #include "controller.h"
-#include <assert.h>
 
 double Battery::getBatteryTemperature()
 {
