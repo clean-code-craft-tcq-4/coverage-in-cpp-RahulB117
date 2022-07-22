@@ -43,8 +43,8 @@ TEST_CASE("Medium active cooling tests"){
 	REQUIRE(breachtype == NORMAL);
 }
 TEST_CASE("High Active cooling tests on classifyTemperatureBreach"){
-	breachType = classifyTemperatureBreach(HI_ACTIVE_COOLING, 50);
-	REQUIRE(breachType == TOO_HIGH);
+	breachtype = classifyTemperatureBreach(HI_ACTIVE_COOLING, 50);
+	REQUIRE(breachtype == TOO_HIGH);
 }
 
 
