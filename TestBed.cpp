@@ -42,10 +42,3 @@ TEST_CASE("Medium active cooling tests"){
 	breachtype = checkAndAlert(battery, controller, email, 10, MED_ACTIVE_COOLING);
 	REQUIRE(breachtype == NORMAL);
 }
-TEST_CASE("High Active cooling tests on classifyTemperatureBreach"){
-	breachtype = classifyTemperatureBreach(HI_ACTIVE_COOLING, 50);
-	REQUIRE(breachtype == TOO_HIGH);
-}
-
-
-
